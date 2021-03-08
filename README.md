@@ -7,7 +7,7 @@ This package provides API for sending local files or compressed and sending fold
 Now you can send files or directories to all your subscribers.
 
 ```
-$ ./senderbot* /path/to/file/or/dir
+$ senderbot /path/to/file/or/dir
 ```
 
 ## How to create your bot
