@@ -4,11 +4,6 @@ This package provides API for sending local files or compressed and sending fold
 
 ## Usage
 
-If you use a *nix system add execution rights:
-```
-$ chmod +x senderbot.elf
-```
-
 Now you can send files or directories to all your subscribers.
 
 ```
@@ -96,3 +91,24 @@ $ make build-darwin BOTID="bot-id" CHATID="chat-id"
 ```
 $ make BOTID="bot-id" CHATID="chat-id"
 ```
+
+## Requirements
+
+- go1.15 or above
+
+## Install
+If you have [Golang](https://golang.org) on your system you just can do:
+
+```
+$ make installBOTID="bot-id" CHATID="chat-id"
+```
+
+## Install for all system 
+
+If necessary add the execution rights:
+
+```
+$ chmod +x senderbot
+```
+
+Copy binaries file to somewhere `$PATH`.
