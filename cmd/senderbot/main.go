@@ -41,7 +41,7 @@ func main() {
 	filePath := flag.Args()[0]
 
 	if filePath == "" {
-		log.Fatalf("filePath is empty. Consider building using makefile")
+		log.Fatalf("file path is empty")
 	}
 
 	finfo, err := os.Stat(filePath)
