@@ -10,6 +10,7 @@ import (
 	"sendbot/internal/zip"
 )
 
+// PrepareData load data from filepath. Zip directory
 func PrepareData(filePath string) (string, io.Reader, error) {
 
 	fInfo, err := os.Stat(filePath)
