@@ -100,7 +100,7 @@ $ make BOTID="bot-id" CHATID="chat-id"
 If you have [Golang](https://golang.org) on your system you just can do:
 
 ```
-$ make installBOTID="bot-id" CHATID="chat-id"
+$ make install BOTID="bot-id" CHATID="chat-id"
 ```
 
 ## Install for all system 
