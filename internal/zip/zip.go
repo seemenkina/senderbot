@@ -48,6 +48,7 @@ func Make(writer io.Writer, filePaths ...string) error {
 }
 
 func zipFile(w *zip.Writer, source string) error {
+
 	sourceInfo, err := os.Stat(source)
 	if err != nil {
 		return fmt.Errorf("%s: stat: %v", source, err)

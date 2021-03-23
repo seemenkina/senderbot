@@ -20,6 +20,7 @@ func (b *Bot) ConstructUrlForSend() string {
 	return "https://api.telegram.org/bot" + b.BotId + "/sendDocument"
 }
 
+// SendFile sends the document with fileName using the bot. The sendDocument Telegram API method is used
 func (b *Bot) SendFile(fileName string, reader io.Reader) error {
 
 	pipeReader, pipeWriter := io.Pipe()
