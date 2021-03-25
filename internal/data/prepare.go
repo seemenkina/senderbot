@@ -11,7 +11,7 @@ import (
 )
 
 // PrepareData load data from filepath. Zip directory
-func PrepareData(filePath string) (string, io.Reader, error) {
+func PrepareData(filePath string) (string, io.ReadCloser, error) {
 
 	fInfo, err := os.Stat(filePath)
 	if err != nil {
@@ -22,7 +22,7 @@ func PrepareData(filePath string) (string, io.Reader, error) {
 		return "", nil, fmt.Errorf("you cant send empty file %s: %v", filePath, err)
 	}
 
-	var r io.Reader
+	var r io.ReadCloser
 	if fInfo.IsDir() {
 		// make zip from directory
 		pipeReader, pipeWriter := io.Pipe()
@@ -37,7 +37,7 @@ func PrepareData(filePath string) (string, io.Reader, error) {
 		if err != nil {
 			return "", nil, fmt.Errorf("something wrong with open file %s  :%v", filePath, err)
 		}
-		defer fi.Close()
+		// defer fi.Close()
 		log.Printf("sucsessed open %s ", fi.Name())
 		r = fi
 	}
