@@ -7,11 +7,11 @@ Further, I will outline the steps sufficient to use this functionality.
 
 Also, you can use this invite link [Father Bot](https://t.me/botfather)
 
-![father-bot](./assets/img/father.png?raw=true)
+![father-bot](../img/father.png?raw=true)
 
 2. Send `/newbot` and follow bot instruction. Like this:
 
-![step](./assets/img/step.png?raw=true)
+![step](../img/step.png?raw=true)
 
 3. Copy the bot's token, it is required on the build step.
 
@@ -33,7 +33,7 @@ curl https://api.telegram.org/bot$(botToken)/getUpdates | jq
 
 The response will display the last actions with the bot, including the id of the group to which it was added:
 
-![chat-id](./assets/img/chat-id.png?raw=true)
+![chat-id](../img/chat-id.png?raw=true)
 
 **Don't lose the ` - ` sign when you copy the id.**
 
@@ -47,7 +47,7 @@ This method for you if you don't have access to the console. You can use any oth
 
 1. Start this bot `@username_to_id_bot` in telegram.
 
-![other-bot](./assets/img/other-bot.png?raw=true)
+![other-bot](../img/other-bot.png?raw=true)
 
 2. Send the bot an invitation link to your group or channel. The response will contain the chat id.
 
